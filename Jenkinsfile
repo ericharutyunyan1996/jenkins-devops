@@ -59,7 +59,7 @@ environment{
 		steps{
 			//"docker build -t ericharutyunyan1996/currency-exchange-devops:$env.BUILD_TAG"
 			script{
-				dockerImage = docker.build("docker build -t ericharutyunyan1996/currency-exchange-devops:${env.BUILD_TAG}")
+				dockerImage = docker.build("ericharutyunyan1996/currency-exchange-devops:${env.BUILD_TAG}")
 			}
 		}
 	}
