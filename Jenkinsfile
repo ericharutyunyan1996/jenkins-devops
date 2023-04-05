@@ -68,8 +68,8 @@ environment{
 			steps{
 				script{
 				docker.withRegistery('','dockerhub'){
-				dockerImage.Push();
-				dockerImage.push('latest')
+				dockerImage.push();
+				dockerImage.push('latest');
 				}
 			}
 			}
